@@ -102,7 +102,6 @@ const SignUpForm = () => {
                 {message}
               </Alert>
             ))}
-
             <Button
               className={`${btnStyles.Button} ${btnStyles.Wide} ${btnStyles.Bright}`}
               type="submit"
