@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 import Form from "react-bootstrap/Form";
 import Alert from "react-bootstrap/Alert";
@@ -20,6 +21,8 @@ function SignInForm() {
         password: "",
       });
       const { username, password } = signInData;
+
+      const [errors, setErrors] = useState({});
     
       const history = useHistory();
     
@@ -56,6 +59,11 @@ function SignInForm() {
                     onChange={handleChange}
                     />
                 </Form.Group>
+                  {errors.username?.map((message, idx) => (
+                  <Alert key={idx} variant="warning">
+                  {message}
+                  </Alert>
+                  ))}
                 <Form.Group controlId="password">
                     <Form.Label className="d-none">Password</Form.Label>
                     <Form.Control 
@@ -67,9 +75,19 @@ function SignInForm() {
                     onChange={handleChange}
                     />
                 </Form.Group>
+                {errors.password?.map((message, idx) => (
+                <Alert key={idx} variant="warning">
+                  {message}
+                </Alert>
+                ))}
                 <Button className={`${btnStyles.Button} ${btnStyles.Wide} ${btnStyles.Bright}`} type="submit">
                     Sign In
                 </Button>
+                {errors.non_field_errors?.map((message, idx) => (
+                <Alert key={idx} variant="warning" className="mt-3">
+                  {message}
+                </Alert>
+                ))}
             </Form>
 
         </Container>
