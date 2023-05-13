@@ -27,6 +27,10 @@ const addPostIcon = (
         <i className="fas fa-heart"></i>
         Liked
       </NavLink>
+      <NavLink className={styles.NavLink} to="/" onClick={() => {}}>
+        <i className="fas fa-sign-out-alt"></i>
+        Sign out
+      </NavLink>
     </>
   const loggedOutIcons = <>
     <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/signin">
