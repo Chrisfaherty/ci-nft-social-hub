@@ -17,7 +17,12 @@ const addPostIcon = (
     </NavLink>
 )
 
-  const loggedInIcons = <>{currentUser?.username}</>
+  const loggedInIcons = <>
+    <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/feed">
+      <i className="fas fa-stream"></i>
+      Feed
+    </NavLink>
+  </>
   const loggedOutIcons = <>
     <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/signin">
         <i className="fas fa-sign-in-alt"></i>
