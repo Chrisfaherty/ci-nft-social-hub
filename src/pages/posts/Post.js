@@ -15,7 +15,9 @@ const Post = (props) => {
     profile_image,
     comments_count,
     likes_count,
+    dislikes_count,
     like_id,
+    dislike_id,
     title,
     content,
     image,
@@ -73,6 +75,38 @@ const Post = (props) => {
     }
   };
 
+  const handleDislike = async () => {
+    try {
+      const { data } = await axiosRes.post("/dislikes/", { post: id });
+      setPosts((prevPosts) => ({
+        ...prevPosts,
+        results: prevPosts.results.map((post) => {
+          return post.id === id
+            ? { ...post, dislikes_count: post.dislikes_count + 1, dislike_id: data.id }
+            : post;
+        }),
+      }));
+    } catch (err) {
+      // console.log(err);
+    }
+  };
+
+  const handleUndislike = async () => {
+    try {
+      await axiosRes.delete(`/dislikes/${dislike_id}/`);
+      setPosts((prevPosts) => ({
+        ...prevPosts,
+        results: prevPosts.results.map((post) => {
+          return post.id === id
+            ? { ...post, dislikes_count: post.dislikes_count - 1, dislike_id: null }
+            : post;
+        }),
+      }));
+    } catch (err) {
+      // console.log(err);
+    }
+  };
+
   return (
     <Card className={styles.Post}>
       <Card.Body>
@@ -99,6 +133,7 @@ const Post = (props) => {
         {title && <Card.Title className="text-center">{title}</Card.Title>}
         {content && <Card.Text>{content}</Card.Text>}
         <div className={styles.PostBar}>
+
           {is_owner ? (
             <OverlayTrigger
               placement="top"
@@ -123,6 +158,32 @@ const Post = (props) => {
             </OverlayTrigger>
           )}
           {likes_count}
+
+          {is_owner ? (
+            <OverlayTrigger
+              placement="top"
+              overlay={<Tooltip>You can't dislike your own post!</Tooltip>}
+            >
+              <i className="fas fa-heart-broken" />
+            </OverlayTrigger>
+          ) : like_id ? (
+            <span onClick={handleUndislike}>
+              <i className={`fas fa-heart-broken ${styles.Heart}`} />
+            </span>
+          ) : currentUser ? (
+            <span onClick={handleDislike}>
+              <i className={`fas fa-heart-broken ${styles.HeartOutline}`} />
+            </span>
+          ) : (
+            <OverlayTrigger
+              placement="top"
+              overlay={<Tooltip>Log in to dislike posts!</Tooltip>}
+            >
+              <i className="fas fa-heart-broken" />
+            </OverlayTrigger>
+          )}
+          {dislikes_count}
+
           <Link to={`/posts/${id}`}>
             <i className="far fa-comments" />
           </Link>
