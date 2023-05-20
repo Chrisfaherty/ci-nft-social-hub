@@ -22,3 +22,15 @@
   .HeartOutline:hover {
     color: #f85032;
   }
+
+  .BrokenHeart {
+    color: #f8a232;
+  }
+  
+  .BrokenHeart:hover {
+    color: #2142b2;
+  }
+  
+  .BrokenHeartOutline:hover {
+    color: #f8a232;
+  }

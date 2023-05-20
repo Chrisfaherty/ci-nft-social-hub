@@ -93,7 +93,7 @@ const Post = (props) => {
 
   const handleUndislike = async () => {
     try {
-      await axiosRes.delete(`/dislikes/${dislike_id}/`);
+      await axiosRes.delete(`/likes/${dislike_id}/`);
       setPosts((prevPosts) => ({
         ...prevPosts,
         results: prevPosts.results.map((post) => {
@@ -166,13 +166,13 @@ const Post = (props) => {
             >
               <i className="fas fa-heart-broken" />
             </OverlayTrigger>
-          ) : like_id ? (
+          ) : dislike_id ? (
             <span onClick={handleUndislike}>
-              <i className={`fas fa-heart-broken ${styles.Heart}`} />
+              <i className={`fas fa-heart-broken ${styles.BrokenHeart}`} />
             </span>
           ) : currentUser ? (
             <span onClick={handleDislike}>
-              <i className={`fas fa-heart-broken ${styles.HeartOutline}`} />
+              <i className={`fas fa-heart-broken ${styles.BrokenHeartOutline}`} />
             </span>
           ) : (
             <OverlayTrigger
@@ -183,6 +183,8 @@ const Post = (props) => {
             </OverlayTrigger>
           )}
           {dislikes_count}
+          console.log({dislikes_count})
+          console.log({comments_count})
 
           <Link to={`/posts/${id}`}>
             <i className="far fa-comments" />
