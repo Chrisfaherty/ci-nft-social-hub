@@ -36,7 +36,7 @@ const Post = (props) => {
 
   const handleDelete = async () => {
     try {
-      await axiosRes.delete(`/posts/${id}/`);
+      await axiosRes.delete(`/posts/${id}`);
       history.goBack();
     } catch (err) {
       // console.log(err);
@@ -61,7 +61,7 @@ const Post = (props) => {
 
   const handleUnlike = async () => {
     try {
-      await axiosRes.delete(`/likes/${like_id}/`);
+      await axiosRes.delete(`/likes/${like_id}`);
       setPosts((prevPosts) => ({
         ...prevPosts,
         results: prevPosts.results.map((post) => {
@@ -93,7 +93,7 @@ const Post = (props) => {
 
   const handleUndislike = async () => {
     try {
-      await axiosRes.delete(`/likes/${dislike_id}/`);
+      await axiosRes.delete(`/dislikes/${dislike_id}`);
       setPosts((prevPosts) => ({
         ...prevPosts,
         results: prevPosts.results.map((post) => {
@@ -145,6 +145,12 @@ const Post = (props) => {
             <span onClick={handleUnlike}>
               <i className={`fas fa-heart ${styles.Heart}`} />
             </span>
+          ) : dislike_id ? (
+            <OverlayTrigger
+            placement="top"
+            overlay={<Tooltip>You can't like and dislike a post</Tooltip>}>
+            <i className="far fa-heart" />
+          </OverlayTrigger>
           ) : currentUser ? (
             <span onClick={handleLike}>
               <i className={`far fa-heart ${styles.HeartOutline}`} />
@@ -170,6 +176,12 @@ const Post = (props) => {
             <span onClick={handleUndislike}>
               <i className={`fas fa-heart-broken ${styles.BrokenHeart}`} />
             </span>
+          ) : like_id ? (
+            <OverlayTrigger
+            placement="top"
+            overlay={<Tooltip>You can't dislike and like a post</Tooltip>}>
+            <i className="fas fa-heart-broken" />
+          </OverlayTrigger>
           ) : currentUser ? (
             <span onClick={handleDislike}>
               <i className={`fas fa-heart-broken ${styles.BrokenHeartOutline}`} />
@@ -183,8 +195,6 @@ const Post = (props) => {
             </OverlayTrigger>
           )}
           {dislikes_count}
-          console.log({dislikes_count})
-          console.log({comments_count})
 
           <Link to={`/posts/${id}`}>
             <i className="far fa-comments" />
