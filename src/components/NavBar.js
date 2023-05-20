@@ -70,7 +70,7 @@ const NavBar = () => {
         activeClassName={styles.Active}
         to="/subscribe"
       >
-        <i className="fas fa-stream"></i>Subscribe
+        <i className="far fa-envelope"></i>Subscribe
       </NavLink>
     </>
   );
