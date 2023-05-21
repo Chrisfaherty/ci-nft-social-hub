@@ -65,13 +65,6 @@ const NavBar = () => {
       >
         <Avatar src={currentUser?.profile_image} text="Profile" height={40} />
       </NavLink>
-      <NavLink
-        className={styles.NavLink}
-        activeClassName={styles.Active}
-        to="/subscribe"
-      >
-        <i className="far fa-envelope"></i>Subscribe
-      </NavLink>
     </>
   );
   const loggedOutIcons = (
@@ -89,6 +82,13 @@ const NavBar = () => {
         activeClassName={styles.Active}
       >
         <i className="fas fa-user-plus"></i>Sign up
+      </NavLink>
+      <NavLink
+        className={styles.NavLink}
+        activeClassName={styles.Active}
+        to="/subscription"
+      >
+        <i className="far fa-envelope"></i>Subscribe
       </NavLink>
     </>
   );
