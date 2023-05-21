@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import { useHistory } from "react-router-dom";
-
-import styles from "../../styles/SignInUpForm.module.css";
+import styles from "../../styles/ContactConfirmation.module.css";
 import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
+import { useRedirect } from "../../hooks/useRedirect";
 
 import {
   Form,
@@ -11,28 +11,25 @@ import {
   Col,
   Row,
   Container,
-  Alert,
+  Alert
 } from "react-bootstrap";
-import axios from "axios";
-import { useRedirect } from "../../hooks/useRedirect";
+import { axiosReq } from "../../api/axiosDefaults";
+
 
 const SubscriptionForm = () => {
-
-  useRedirect('loggedIn')
-
-  const [subscriptionData, setSubscriptionData] = useState({
+  useRedirect("loggedOut");
+  const [contactData, setContactData] = useState({
     fullname: "",
     email: "",
   });
-  const { fullname, email} = subscriptionData;
 
+  const { fullname, email } = contactData;
   const [errors, setErrors] = useState({});
-
   const history = useHistory();
 
   const handleChange = (event) => {
-    setSubscriptionData({
-      ...subscriptionData,
+    setContactData({
+      ...contactData,
       [event.target.name]: event.target.value,
     });
   };
@@ -40,68 +37,63 @@ const SubscriptionForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      await axios.post("/subscriptions/", subscriptionData);
+      await axiosReq.post("/subscription/", contactData);
       history.push("/confirmation");
     } catch (err) {
       setErrors(err.response?.data);
     }
   };
 
-  return (
+  return (    
     <Row className={styles.Row}>
-      <Col className="my-auto py-2 p-md-2" md={8}>
+      
+      <Col>
         <Container className={`${appStyles.Content} p-4 `}>
-          <h1 className={styles.Header}>subscribe to stay informed</h1>
-
+          <h1 className={styles.Header}>Subscribe Today!</h1>
           <Form onSubmit={handleSubmit}>
-            <Form.Group controlId="fullname">
-              <Form.Label className="d-none">fullname</Form.Label>
+            <Form.Group>
+              <Form.Label>Full name</Form.Label>
               <Form.Control
-                className={styles.Input}
                 type="text"
-                placeholder="Fullname"
                 name="fullname"
                 value={fullname}
                 onChange={handleChange}
               />
             </Form.Group>
-            {errors.fullname?.map((message, idx) => (
+            {errors.fname?.map((message, idx) => (
               <Alert variant="warning" key={idx}>
                 {message}
               </Alert>
             ))}
 
-            <Form.Group controlId="email">
-              <Form.Label className="d-none">Email Address</Form.Label>
+            <Form.Group>
+              <Form.Label>Email</Form.Label>
               <Form.Control
-                className={styles.Input}
-                type="email"
-                placeholder="Email Address"
+                type="text"
                 name="email"
                 value={email}
                 onChange={handleChange}
               />
             </Form.Group>
             {errors.email?.map((message, idx) => (
-              <Alert key={idx} variant="warning">
+              <Alert variant="warning" key={idx}>
                 {message}
               </Alert>
             ))}
 
             <Button
-              className={`${btnStyles.Button} ${btnStyles.Wide} ${btnStyles.Bright}`}
-              type="submit"
+            className={btnStyles.Button}
+            type="submit"
             >
-              Subscribe Now!
+              Submit
             </Button>
             {errors.non_field_errors?.map((message, idx) => (
               <Alert key={idx} variant="warning" className="mt-3">
                 {message}
               </Alert>
             ))}
-          </Form>
+            </Form>
         </Container>
-
       </Col>
     </Row>
   );
