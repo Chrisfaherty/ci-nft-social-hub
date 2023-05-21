@@ -40,8 +40,8 @@ const SubscriptionForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      await axios.post("/dj-rest-auth/registration/", subscriptionData);
-      history.push("/");
+      await axios.post("/subscriptions/", subscriptionData);
+      history.push("/confirmation");
     } catch (err) {
       setErrors(err.response?.data);
     }

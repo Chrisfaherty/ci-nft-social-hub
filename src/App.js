@@ -16,6 +16,7 @@ import UsernameForm from "./pages/profiles/UsernameForm";
 import UserPasswordForm from "./pages/profiles/UserPasswordForm";
 import ProfileEditForm from "./pages/profiles/ProfileEditForm";
 import NotFound from "./components/NotFound";
+import Confirmation from "./pages/subscriptions/Confirmation";
 
 function App() {
   const currentUser = useCurrentUser();
@@ -56,6 +57,7 @@ function App() {
           <Route exact path="/signin" render={() => <SignInForm />} />
           <Route exact path="/signup" render={() => <SignUpForm />} />
           <Route exact path="/subscription" render={() => <SubscriptionForm />}/>
+          <Route exact path="/confirmation" render={() => <Confirmation />} />
           <Route exact path="/posts/create" render={() => <PostCreateForm />} />
           <Route exact path="/posts/:id/edit" render={() => <PostEditForm />} />
           <Route exact path="/profiles/:id" render={() => <ProfilePage />} />
