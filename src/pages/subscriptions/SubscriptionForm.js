@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { useHistory } from "react-router-dom";
-import styles from "../../styles/ContactConfirmation.module.css";
+import styles from "../../styles/SubscriptionConfirmation.module.css";
 import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
 import { useRedirect } from "../../hooks/useRedirect";
@@ -18,18 +18,18 @@ import { axiosReq } from "../../api/axiosDefaults";
 
 const SubscriptionForm = () => {
   useRedirect("loggedOut");
-  const [contactData, setContactData] = useState({
-    fullname: "",
+  const [subscriptionData, setSubscriptionData] = useState({
+    name: "",
     email: "",
   });
 
-  const { fullname, email } = contactData;
+  const { name, email } = subscriptionData;
   const [errors, setErrors] = useState({});
   const history = useHistory();
 
   const handleChange = (event) => {
-    setContactData({
-      ...contactData,
+    setSubscriptionData({
+      ...subscriptionData,
       [event.target.name]: event.target.value,
     });
   };
@@ -37,7 +37,7 @@ const SubscriptionForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      await axiosReq.post("/subscription/", contactData);
+      await axiosReq.post("/subscriptions/", subscriptionData);
       history.push("/confirmation");
     } catch (err) {
       setErrors(err.response?.data);
@@ -55,12 +55,12 @@ const SubscriptionForm = () => {
               <Form.Label>Full name</Form.Label>
               <Form.Control
                 type="text"
-                name="fullname"
-                value={fullname}
+                name="name"
+                value={name}
                 onChange={handleChange}
               />
             </Form.Group>
-            {errors.fname?.map((message, idx) => (
+            {errors.name?.map((message, idx) => (
               <Alert variant="warning" key={idx}>
                 {message}
               </Alert>
