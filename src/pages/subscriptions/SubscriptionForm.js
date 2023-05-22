@@ -3,7 +3,6 @@ import { useHistory } from "react-router-dom";
 import styles from "../../styles/SubscriptionConfirmation.module.css";
 import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
-import { useRedirect } from "../../hooks/useRedirect";
 
 import {
   Form,
@@ -17,13 +16,12 @@ import { axiosReq } from "../../api/axiosDefaults";
 
 
 const SubscriptionForm = () => {
-  useRedirect("loggedOut");
   const [subscriptionData, setSubscriptionData] = useState({
-    name: "",
+    fullname: "",
     email: "",
   });
 
-  const { name, email } = subscriptionData;
+  const { fullname, email } = subscriptionData;
   const [errors, setErrors] = useState({});
   const history = useHistory();
 
@@ -55,12 +53,12 @@ const SubscriptionForm = () => {
               <Form.Label>Full name</Form.Label>
               <Form.Control
                 type="text"
-                name="name"
-                value={name}
+                name="fullname"
+                value={fullname}
                 onChange={handleChange}
               />
             </Form.Group>
-            {errors.name?.map((message, idx) => (
+            {errors.fullname?.map((message, idx) => (
               <Alert variant="warning" key={idx}>
                 {message}
               </Alert>
