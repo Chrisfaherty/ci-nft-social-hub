@@ -3,6 +3,10 @@
     max-width: 50%;
     padding: 0px;
   }
+
+  .DropdownItem:hover {
+    color: #9d4edd;
+  }
   
   .Absolute {
     position: absolute;
