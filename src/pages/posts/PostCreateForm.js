@@ -29,9 +29,12 @@ function PostCreateForm() {
   const [postData, setPostData] = useState({
     title: "",
     content: "",
+    website: "",
+    social: "",
+    marketplace: "",
     image: "",
   });
-  const { title, content, image } = postData;
+  const { title, content, website, social, marketplace, image } = postData;
 
   const imageInput = useRef(null);
   const history = useHistory();
@@ -59,6 +62,9 @@ function PostCreateForm() {
 
     formData.append("title", title);
     formData.append("content", content);
+    formData.append("website", website);
+    formData.append("social", social);
+    formData.append("marketplace", marketplace);
     formData.append("image", imageInput.current.files[0]);
 
     try {
@@ -100,6 +106,51 @@ function PostCreateForm() {
         />
       </Form.Group>
       {errors?.content?.map((message, idx) => (
+        <Alert variant="warning" key={idx}>
+          {message}
+        </Alert>
+      ))}
+      <Form.Group>
+        <Form.Label>Website</Form.Label>
+        <Form.Control
+          as="textarea"
+          rows={6}
+          name="website"
+          value={website}
+          onChange={handleChange}
+        />
+      </Form.Group>
+      {errors?.website?.map((message, idx) => (
+        <Alert variant="warning" key={idx}>
+          {message}
+        </Alert>
+      ))}
+            <Form.Group>
+        <Form.Label>Social</Form.Label>
+        <Form.Control
+          as="textarea"
+          rows={6}
+          name="social"
+          value={social}
+          onChange={handleChange}
+        />
+      </Form.Group>
+      {errors?.social?.map((message, idx) => (
+        <Alert variant="warning" key={idx}>
+          {message}
+        </Alert>
+      ))}
+      <Form.Group>
+        <Form.Label>Marketplace</Form.Label>
+        <Form.Control
+          as="textarea"
+          rows={6}
+          name="marketplace"
+          value={marketplace}
+          onChange={handleChange}
+        />
+      </Form.Group>
+      {errors?.marketplace?.map((message, idx) => (
         <Alert variant="warning" key={idx}>
           {message}
         </Alert>
