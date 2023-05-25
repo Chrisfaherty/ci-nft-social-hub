@@ -66,7 +66,7 @@ function PostCreateForm() {
     formData.append("social", social);
     formData.append("marketplace", marketplace);
     formData.append("image", imageInput.current.files[0]);
-
+  
     try {
       const { data } = await axiosReq.post("/posts/", formData);
       history.push(`/posts/${data.id}`);
@@ -99,7 +99,6 @@ function PostCreateForm() {
         <Form.Label>Content</Form.Label>
         <Form.Control
           as="textarea"
-          rows={6}
           name="content"
           value={content}
           onChange={handleChange}
@@ -113,8 +112,7 @@ function PostCreateForm() {
       <Form.Group>
         <Form.Label>Website</Form.Label>
         <Form.Control
-          as="textarea"
-          rows={6}
+          type="text"
           name="website"
           value={website}
           onChange={handleChange}
@@ -125,11 +123,10 @@ function PostCreateForm() {
           {message}
         </Alert>
       ))}
-            <Form.Group>
+      <Form.Group>
         <Form.Label>Social</Form.Label>
         <Form.Control
-          as="textarea"
-          rows={6}
+          type="text"
           name="social"
           value={social}
           onChange={handleChange}
@@ -143,8 +140,7 @@ function PostCreateForm() {
       <Form.Group>
         <Form.Label>Marketplace</Form.Label>
         <Form.Control
-          as="textarea"
-          rows={6}
+          type="text"
           name="marketplace"
           value={marketplace}
           onChange={handleChange}

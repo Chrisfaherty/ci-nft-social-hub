@@ -20,6 +20,9 @@ const Post = (props) => {
     dislike_id,
     title,
     content,
+    social,
+    marketplace,
+    website,
     image,
     updated_at,
     postPage,
@@ -132,6 +135,9 @@ const Post = (props) => {
       <Card.Body>
         {title && <Card.Title className="text-center">{title}</Card.Title>}
         {content && <Card.Text>{content}</Card.Text>}
+        {website && <Card.Text>{website}</Card.Text>}
+        {social && <Card.Text>{social}</Card.Text>}
+        {marketplace && <Card.Text>{marketplace}</Card.Text>}
         <div className={styles.PostBar}>
 
           {is_owner ? (

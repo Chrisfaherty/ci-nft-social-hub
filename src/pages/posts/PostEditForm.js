@@ -22,9 +22,12 @@ function PostEditForm() {
   const [postData, setPostData] = useState({
     title: "",
     content: "",
+    website: "",
+    social: "",
+    marketplace: "",
     image: "",
   });
-  const { title, content, image } = postData;
+  const { title, content, website, social, marketplace, image } = postData;
 
   const imageInput = useRef(null);
   const history = useHistory();
@@ -34,9 +37,9 @@ function PostEditForm() {
     const handleMount = async () => {
         try {
             const {data} = await axiosReq.get(`/posts/${id}/`);
-            const {title, content, image, is_owner} = data;
+            const {title, content, website, social, marketplace, image, is_owner} = data;
 
-            is_owner ? setPostData({title, content, image}) : history.push('/');
+            is_owner ? setPostData({title, content, website, social, marketplace, image}) : history.push('/');
         } catch(err) {
             // console.log(err);
         }
@@ -67,6 +70,9 @@ function PostEditForm() {
 
     formData.append("title", title);
     formData.append("content", content);
+    formData.append("website", website);
+    formData.append("social", social);
+    formData.append("marketplace", marketplace);
 
     if (imageInput?.current?.files[0]){
         formData.append("image", imageInput.current.files[0]);
@@ -115,7 +121,48 @@ function PostEditForm() {
           {message}
         </Alert>
       ))}
-
+            <Form.Group>
+        <Form.Label>Website</Form.Label>
+        <Form.Control
+          as="text"
+          name="website"
+          value={website}
+          onChange={handleChange}
+        />
+      </Form.Group>
+      {errors?.website?.map((message, idx) => (
+        <Alert variant="warning" key={idx}>
+          {message}
+        </Alert>
+      ))}
+      <Form.Group>
+        <Form.Label>Social</Form.Label>
+        <Form.Control
+          as="text"
+          name="social"
+          value={social}
+          onChange={handleChange}
+        />
+      </Form.Group>
+      {errors?.social?.map((message, idx) => (
+        <Alert variant="warning" key={idx}>
+          {message}
+        </Alert>
+      ))}
+      <Form.Group>
+        <Form.Label>Marketplace</Form.Label>
+        <Form.Control
+          as="text"
+          name="marketplace"
+          value={marketplace}
+          onChange={handleChange}
+        />
+      </Form.Group>
+      {errors?.marketplace?.map((message, idx) => (
+        <Alert variant="warning" key={idx}>
+          {message}
+        </Alert>
+      ))}
       <Button
         className={`${btnStyles.Button} ${btnStyles.Blue}`}
         onClick={() => history.goBack()}
