@@ -124,7 +124,7 @@ function PostEditForm() {
             <Form.Group>
         <Form.Label>Website</Form.Label>
         <Form.Control
-          as="text"
+          type="text"
           name="website"
           value={website}
           onChange={handleChange}
@@ -138,7 +138,7 @@ function PostEditForm() {
       <Form.Group>
         <Form.Label>Social</Form.Label>
         <Form.Control
-          as="text"
+          type="text"
           name="social"
           value={social}
           onChange={handleChange}
@@ -152,7 +152,7 @@ function PostEditForm() {
       <Form.Group>
         <Form.Label>Marketplace</Form.Label>
         <Form.Control
-          as="text"
+          type="text"
           name="marketplace"
           value={marketplace}
           onChange={handleChange}
