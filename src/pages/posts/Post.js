@@ -135,9 +135,9 @@ const Post = (props) => {
       <Card.Body>
         {title && <Card.Title className="text-center">{title}</Card.Title>}
         {content && <Card.Text>{content}</Card.Text>}
-        {website && <Card.Text>{website}</Card.Text>}
-        {social && <Card.Text>{social}</Card.Text>}
-        {marketplace && <Card.Text>{marketplace}</Card.Text>}
+        {website && <Card.Text><a href={website.toString()} target="_blank" rel="noopener noreferrer">{website}</a></Card.Text>}
+        {social && <Card.Text><a href={social.toString()} target="_blank" rel="noopener noreferrer">{social}</a></Card.Text>}
+        {marketplace && <Card.Text><a href={marketplace.toString()} target="_blank" rel="noopener noreferrer">{marketplace}</a></Card.Text>}
         <div className={styles.PostBar}>
 
           {is_owner ? (
@@ -153,10 +153,10 @@ const Post = (props) => {
             </span>
           ) : dislike_id ? (
             <OverlayTrigger
-            placement="top"
-            overlay={<Tooltip>You can't like and dislike a post</Tooltip>}>
-            <i className="far fa-heart" />
-          </OverlayTrigger>
+              placement="top"
+              overlay={<Tooltip>You can't like and dislike a post</Tooltip>}>
+              <i className="far fa-heart" />
+            </OverlayTrigger>
           ) : currentUser ? (
             <span onClick={handleLike}>
               <i className={`far fa-heart ${styles.HeartOutline}`} />
@@ -184,10 +184,10 @@ const Post = (props) => {
             </span>
           ) : like_id ? (
             <OverlayTrigger
-            placement="top"
-            overlay={<Tooltip>You can't dislike and like a post</Tooltip>}>
-            <i className="fas fa-heart-broken" />
-          </OverlayTrigger>
+              placement="top"
+              overlay={<Tooltip>You can't dislike and like a post</Tooltip>}>
+              <i className="fas fa-heart-broken" />
+            </OverlayTrigger>
           ) : currentUser ? (
             <span onClick={handleDislike}>
               <i className={`fas fa-heart-broken ${styles.BrokenHeartOutline}`} />
