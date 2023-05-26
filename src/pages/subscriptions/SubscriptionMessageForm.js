@@ -69,7 +69,7 @@ const SubscriptionMessageForm = () => {
             ))}
 
             <Form.Group>
-              <Form.Label>email</Form.Label>
+              <Form.Label>Email</Form.Label>
               <Form.Control
                 type="text"
                 name="email"
