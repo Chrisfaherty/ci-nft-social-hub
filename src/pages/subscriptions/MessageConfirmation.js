@@ -18,7 +18,10 @@ const MessageConfirmationForm = () => {
       <Col>
         <Container className={`${appStyles.Content} p-4 `}>
           <h1 className={styles.Header}>Message Recieved!</h1>
-          <p className="text-center">Thank you for getting in touch, We will get back to you ASAP!</p>    
+          <p className="text-center">Thank you for getting in touch, We will get back to you ASAP!</p>
+          <p className="text-center">You can only submit one Form at a time.</p>
+          <p className="text-center">So please don't try to resubmit.</p>
+          <p className="text-center">We can discuss further questions after we get to your ticket.</p>  
         </Container>
       </Col>
     </Row>
