@@ -115,7 +115,7 @@ const SubscriptionMessageForm = () => {
             ))}
 
             <Button
-            className={btnStyles.Button}
+            className={`${btnStyles.Button} ${btnStyles.Black}`}
             type="submit"
             >
               Submit
