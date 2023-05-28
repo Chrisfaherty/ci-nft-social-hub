@@ -35,7 +35,7 @@ const SubscriptionForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      await axiosReq.post("/subscriptions/", subscriptionData);
+      await axiosReq.post("/subscriptions", subscriptionData);
       history.push("/confirmation");
     } catch (err) {
       setErrors(err.response?.data);
