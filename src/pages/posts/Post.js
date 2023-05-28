@@ -1,7 +1,13 @@
 import React from "react";
 import styles from "../../styles/Post.module.css";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
-import { Card, Media, OverlayTrigger, Tooltip } from "react-bootstrap";
+import { 
+  Card, 
+  Media, 
+  OverlayTrigger, 
+  Tooltip,
+  Row,
+  Col, } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
 import Avatar from "../../components/Avatar";
 import { axiosRes } from "../../api/axiosDefaults";
@@ -133,11 +139,25 @@ const Post = (props) => {
         <Card.Img src={image} alt={title} />
       </Link>
       <Card.Body>
-        {title && <Card.Title className="text-center">{title}</Card.Title>}
-        {content && <Card.Text>{content}</Card.Text>}
-        {website && <Card.Text><a href={website.toString()} target="_blank" rel="noopener noreferrer">{website}</a></Card.Text>}
-        {social && <Card.Text><a href={social.toString()} target="_blank" rel="noopener noreferrer">{social}</a></Card.Text>}
-        {marketplace && <Card.Text><a href={marketplace.toString()} target="_blank" rel="noopener noreferrer">{marketplace}</a></Card.Text>}
+
+            <Row>
+              {title && <Card.Title className="text-center">{title}</Card.Title>}
+            </Row>
+            <Row>
+              {content && <Card.Text>{content}</Card.Text>}
+            </Row>
+            <Row>
+              <Col>
+                {website && <Card.Text>Website<a href={website.toString()} target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-link"></i></a></Card.Text>}
+              </Col>
+              <Col>
+                {social && <Card.Text>Social<a href={social.toString()} target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a></Card.Text>}
+              </Col>
+              <Col>
+                {marketplace && <Card.Text>Marketplace<a href={marketplace.toString()} target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-link"></i></a></Card.Text>}
+              </Col>
+            </Row>
+            
         <div className={styles.PostBar}>
 
           {is_owner ? (
