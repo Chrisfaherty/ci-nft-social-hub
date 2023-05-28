@@ -1,7 +1,7 @@
 .Post {
-    background-color: #ffffff;
+    background-color: #97cadb;
     border: 1px solid #dadadf;
-    border-radius: 2px;
+    border-radius: 10px;
     margin-bottom: 16px;
     text-align: center;
   }
@@ -16,7 +16,7 @@
   }
   
   .Heart:hover {
-    color: #2142b2;
+    color: #001b48;
   }
   
   .HeartOutline:hover {
@@ -28,7 +28,7 @@
   }
   
   .BrokenHeart:hover {
-    color: #2142b2;
+    color: #001b48;
   }
   
   .BrokenHeartOutline:hover {

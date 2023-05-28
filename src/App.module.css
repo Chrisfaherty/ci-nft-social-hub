@@ -9,9 +9,9 @@
 }
 
 .Content {
-  background-color: #97cadb;
+  background-color: #ffffff;
   padding: 10px;
-  border-radius: 2px;
+  border-radius: 10px;
   border: 1px solid #dadadf;
 }
 
@@ -50,7 +50,7 @@ input[type="file"] {
 }
 
 i {
-  color: #cfced3;
+  color: #ffffff;
   font-size: 1.6rem;
   padding: 7px;
   vertical-align: middle;
