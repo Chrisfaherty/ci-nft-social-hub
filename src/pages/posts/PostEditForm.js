@@ -107,6 +107,33 @@ function PostEditForm() {
       ))}
 
       <Form.Group>
+      <Form.Label>Category</Form.Label>
+        <Form.Control
+          as="select"
+          name="category"
+          defaultValue={category}
+          onChange={handleChange}
+        >
+          <option value="pfps/avatars">PFPs / Avatars</option>
+          <option value="one-of-one artwork">One-of-one Artwork</option>
+          <option value="generative art">Generative art</option>
+          <option value="collectibles">Collectibles</option>
+          <option value="photography">Photography</option>
+          <option value="music">Music</option>
+          <option value="gamified">Gameified</option>
+          <option value="event ticket">Event Ticket</option>
+          <option value="membership pass">Membership Pass</option>
+          <option value="domain names">Domain names</option>
+          <option value="other">Other</option>
+        </Form.Control>
+      </Form.Group>
+            {errors?.category?.map((message, idx) => (
+              <Alert variant="warning" key={idx}>
+                {message}
+              </Alert>
+            ))}
+
+      <Form.Group>
         <Form.Label>Content</Form.Label>
         <Form.Control
           as="textarea"

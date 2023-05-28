@@ -25,6 +25,7 @@ const Post = (props) => {
     like_id,
     dislike_id,
     title,
+    category,
     content,
     social,
     marketplace,
@@ -142,6 +143,9 @@ const Post = (props) => {
 
             <Row>
               {title && <Card.Title className="text-center">{title}</Card.Title>}
+            </Row>
+            <Row>
+              {category && <Card.Title className="text-center">{category}</Card.Title>}
             </Row>
             <Row>
               {content && <Card.Text>{content}</Card.Text>}
