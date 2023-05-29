@@ -21,13 +21,14 @@ function PostEditForm() {
 
   const [postData, setPostData] = useState({
     title: "",
+    category: "",
     content: "",
     website: "",
     social: "",
     marketplace: "",
     image: "",
   });
-  const { title, content, website, social, marketplace, image } = postData;
+  const { title, category, content, website, social, marketplace, image } = postData;
 
   const imageInput = useRef(null);
   const history = useHistory();
@@ -37,9 +38,9 @@ function PostEditForm() {
     const handleMount = async () => {
         try {
             const {data} = await axiosReq.get(`/posts/${id}/`);
-            const {title, content, website, social, marketplace, image, is_owner} = data;
+            const {title, category, content, website, social, marketplace, image, is_owner} = data;
 
-            is_owner ? setPostData({title, content, website, social, marketplace, image}) : history.push('/');
+            is_owner ? setPostData({title, category, content, website, social, marketplace, image}) : history.push('/');
         } catch(err) {
             // console.log(err);
         }
@@ -69,6 +70,7 @@ function PostEditForm() {
     const formData = new FormData();
 
     formData.append("title", title);
+    formData.append("category", category);
     formData.append("content", content);
     formData.append("website", website);
     formData.append("social", social);
