@@ -116,6 +116,7 @@ function PostEditForm() {
           defaultValue={category}
           onChange={handleChange}
         >
+          <option value="-">Select</option>
           <option value="pfps/avatars">PFPs / Avatars</option>
           <option value="one-of-one artwork">One-of-one Artwork</option>
           <option value="generative art">Generative art</option>
