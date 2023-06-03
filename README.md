@@ -150,3 +150,41 @@ The Post, liked & Feed wireframes are the same. They will vary as different user
 - Subscribe Wireframe - [View](docs/readme/wireframe/subscribe-wireframe.png)
 
 - No Results Wireframe - [View](docs/readme/wireframe/no-result-wireframe.png)
+
+## Technologies Used
+
+### Languages
+
+- React
+- Javascript
+- HTML
+- CSS
+
+### Libraries, frameworks and dependencies
+
+- [Axios](https://axios-http.com/docs/intro) - Axios was used for promise-based HTTP requests. Justification: Axios was required to send and retrieve data from the User preventing Cross-origin resource sharing errors from occuring.
+- [JWT](https://jwt.io/) - JWT library was used to decode JSON Web tokens. Justification: JWT is used to prevent unauthenticated users from making network requests to refresh their access token. This allowed for authentication tokens to be used in the browser to keep logged in users logged in until they logged out.
+- [React 17](https://17.reactjs.org/) - JavaScript library for building user interfaces. Justification: This allowed for multiple encapsulated components to be used that manage their own state. React is extremely useful for this reason, and it also updates the data when data changes.
+- [React-Bootstrap 1.6.3](https://react-bootstrap-v4.netlify.app/) - React bootstrap allowed for the rapid design of the website. Justification: Bootstrap allowe for a faster build time whilst making the project responsive and styled at the same time.
+- [React Router](https://v5.reactrouter.com/web/guides/quick-start) - This was used for dynamic routing. Justification: This this allowed the users to be directed to specific pages via url routers.
+- [React Infinite Scroll](https://www.npmjs.com/package/react-infinite-scroll-component) - React Infinite Scroll is a feature used to keep the user engaged Justification: This feature alows the user to continue scrolling and the posts will keep loading.
+
+### Tools & Programs
+
+- [Amiresponsive](https://ui.dev/amiresponsivecom/) was used to create the readme cover image,
+- [Balsamiq](https://balsamiq.com/) used to create wireframes,
+- [Cloudinary](https://cloudinary.com/) used to store static files,
+- [Coolors](https://coolors.co/?home) used to generate the color scheme palette,
+- [Formito](https://favicon.com) used to create the website's favicon,
+- [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools/) used for debugging of the code and checking site for responsiveness,
+- [Google Fonts](https://fonts.google.com/) - Used for the fonts in the website,
+- [GitHub](https://github.com/) used as a remote repository to store project code,
+- [Git](https://git-scm.com/) used to commit and push my repository changes to github
+- [Font Awesome](https://fontawesome.com/) - used for the icons in the website,
+- [React Spinners](https://www.npmjs.com/package/react-spinners) - used to generate the loading spinners
+- [Gitpod](https://www.gitpod.io/) - Was my chosen workspace to code this project
+- [Heroku](https://dashboard.heroku.com/apps) was used to deploy my code live
+- [ESLint](https://eslint.org/) used to validate JSX code
+- [WC3 Validator](https://validator.w3.org/) was used to validate my HTML
+- [Lighthouse Tools](https://developers.google.com/web/tools/lighthouse/) used to validate performance, accessibility, best practices and SEO of my website
+- [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/) was used to validate my CSS
