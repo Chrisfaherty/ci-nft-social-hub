@@ -938,6 +938,7 @@ There were no JSX errors and the project compiled sucessfully.
 <img src="docs/readme/manual-testing/user-story-mt-35-3.png">
 </details>
 
+
 ### Performing Tests
 
 I built and tested this website using Google Chrome Developer tools- which allowed me to test specific breakpoints for different screen sizes.
@@ -949,18 +950,27 @@ For desktop and mobile responsiveness.
 ### Browers that I've tested on
 
 Testing has been carried out on the following browsers:
-I have all browsers other than firefox for loging into the site (Sometimes Chrome would work as well)
-I was not able to log in on mobile. The app is responsive but there is a browser compatability issue with the version of react being used.
-The bug is todo with the use Redirect and tokens to keep the user logged in. When ever the sign in button is hit the user gets redirected to sign in again rather than redirected to the home page.
 
-This is something i want to improve in this app in the future.
 
-Therefor theis project should be tested on Chrome or firefox on desktop. 
+Therefor this project should be tested on Chrome or firefox on desktop. 
 
 - Googe Chrome
 - Firefox
 - IOS
 
+## Bugs
+
+- Browser Compatability
+
+    - I have an issue when i an trying to sign in on IOS, Mobile Browsers and Safari, When logging in i would get redirected back to the log in page.
+        I found out that Google Chrome and Firefox on desktop were the only 2 browsers having this issue. The issue seems to be with the access token getting stored which is used to redirect the logged in user to the loged in page. Since the token was not getting stored correctly in local storage the redirect kept pushing me back to the sign in screen. 
+        This is a bug that I want to fix when i have more time. The bug is known by many and seems to be a react compatability issue with browsers. 
+
+- Subscription Form
+
+    - I am after getting a bug with my subscription form where it is saying that my fullname in undefine. This bug was not evedent yesterday when i was testing out the project. 
+        I have not been able to resolve this due to the tight time copnstraints of submission and at risk of causing more issues. 
+        This is a bug i will fix after submission as i get more time to focus on it. The functionality of the rest of the project meets the project criteria therefore I made the decision to keep this bug unresolved.
 
 
 ## Deployment
