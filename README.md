@@ -716,6 +716,101 @@ There were no JSX errors and the project compiled sucessfully.
 <img src="docs/readme/manual-testing/user-story-mt-16-1.png">
 </details>
 
+17. As a user I can view the posts page so that I can read the comments about the post,
+
+| **Action**                                                                               | **Expected Result**                                 | **Actual Result** |
+| ---------------------------------------------------------------------------------------- | --------------------------------------------------- | ----------------- |
+| Click on the post you want to viwe comments for then scroll down to the comments section | The latest comment will be displayed under the post | Works as expected |
+
+<details><summary>User Story Test Screenshots</summary>
+<img src="docs/readme/manual-testing/user-story-mt-17-1.png">
+<img src="docs/readme/manual-testing/user-story-mt-17-2.png">
+</details>
+
+18. As a user I can edit my post title and description so that I can make corrections or update my post after it was created,
+
+| **Action**                                                  | **Expected Result**                              | **Actual Result** |
+| ----------------------------------------------------------- | ------------------------------------------------ | ----------------- |
+| Click on the post you want to edit                          | This will bring the user to the post detail page | Works as expected |
+| Click on the 3 dots in the top left hand corner of the post | This will open the dropdown menu                 | Works as expected |
+| Click on the edit icon                                      | This will open up the edit page                  | Works as expected |
+| Enter the details and click save                            | This will save the net details in the post       | Works as expected |
+
+<details><summary>User Story Test Screenshots</summary>
+<img src="docs/readme/manual-testing/user-story-mt-18-1.png">
+<img src="docs/readme/manual-testing/user-story-mt-18-2.png">
+<img src="docs/readme/manual-testing/user-story-mt-18-3.png">
+<img src="docs/readme/manual-testing/user-story-mt-18-4.png">
+</details>
+
+19. As a user I can add comments to a post so that I can share my thoughts about the post,
+
+| **Action**                                                                                            | **Expected Result**                                                          | **Actual Result** |
+| ----------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ----------------- |
+| click on the post you want to comment on then scroll down to the comments section and leave a comment | The comment is added to the post and will be on top as it is the most recent | Works as expected |
+
+<details><summary>User Story Test Screenshots</summary>
+<img src="docs/readme/manual-testing/user-story-mt-19-1.png">
+<img src="docs/readme/manual-testing/user-story-mt-19-2.png">
+</details>
+
+20. As a user I can see how long ago a comment was made so that I know how old a comment is,
+
+| **Action**                                                                  | **Expected Result**                                    | **Actual Result** |
+| --------------------------------------------------------------------------- | ------------------------------------------------------ | ----------------- |
+| Click on the post and scroll down to the comments it will have a date on it | There is a date beside the avatar of the comment owner | Works as expected |
+
+<details><summary>User Story Test Screenshots</summary>
+<img src="docs/readme/manual-testing/user-story-mt-20-1.png">
+</details>
+
+21. As a user I can read comments on posts so that I can read what other users think about the posts,
+
+| **Action**                                                                                                 | **Expected Result**                                                        | **Actual Result** |
+| ---------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- | ----------------- |
+| Click on the comments icon below the post you want to read the comments about, scroll down to the comments | The user is brought to the posts page where the comments are at the bottom | Works as expected |
+
+<details><summary>User Story Test Screenshots</summary>
+<img src="docs/readme/manual-testing/user-story-mt-21-1.png">
+<img src="docs/readme/manual-testing/user-story-mt-21-2.png">
+</details>
+
+22. As a user I can delete my comment so that I can control removal of my comment from the application,
+
+| **Action**                                               | **Expected Result**                                     | **Actual Result** |
+| -------------------------------------------------------- | ------------------------------------------------------- | ----------------- |
+| Click on the 3 dots under the comment you want to delete | The drop down menu opens with the edit and delete icons | Works as expected |
+| Click on the delete icon                                 | The comment is deleted                                  | Works as expected |
+
+<details><summary>User Story Test Screenshots</summary>
+<img src="docs/readme/manual-testing/user-story-mt-22-1.png">
+<img src="docs/readme/manual-testing/user-story-mt-22-2.png">
+<img src="docs/readme/manual-testing/user-story-mt-22-3.png">
+</details>
+
+23. As a user I can edit my comment so that I can fix or update my existing comment,
+
+| **Action**                                                           | **Expected Result**                                 | **Actual Result** |
+| -------------------------------------------------------------------- | --------------------------------------------------- | ----------------- |
+| Click on the 3 dots underneath the comment you want to edit          | the dropdown will display the edit and delete icons | Works as expected |
+| Click on the edit button, enter in the edited comment and click save | The comment is edited and posted                    | Works as expected |
+
+<details><summary>User Story Test Screenshots</summary>
+<img src="docs/readme/manual-testing/user-story-mt-23-1.png">
+<img src="docs/readme/manual-testing/user-story-mt-23-2.png">
+<img src="docs/readme/manual-testing/user-story-mt-23-3.png">
+</details>
+
+24. As a user I can like or dislike a post but not both together on the same post,
+
+| **Action**                                                        | **Expected Result**                                                               | **Actual Result** |
+| ----------------------------------------------------------------- | --------------------------------------------------------------------------------- | ----------------- |
+| Click on the dislike button on a post that you have already liked | An error message will be displayed saying you cant like and dislike the same post | Works as expected |
+
+<details><summary>User Story Test Screenshots</summary>
+<img src="docs/readme/manual-testing/user-story-mt-24-1.png">
+</details>
+
 
 ## Deployment
 
