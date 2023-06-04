@@ -12,7 +12,6 @@ import {
 const Confirmation = () => {
   return (    
     <Row className={styles.Row}>
-      
       <Col>
         <Container className={`${appStyles.Content} p-4 `}>
           <h1 className={styles.Header}>Subscription Confirmed</h1>
