@@ -433,6 +433,83 @@ I used the W3C Markup Validation Service to validate my HTML code. As you can se
 </details>
 
 
+### CSS
+
+I used the W3C Jigsaw CSS Validation Service to validate the CSS of my website. All of my CSS modules that were imported within my js files were validated. No errors were found in the CSS, The same pass image was used for all below.
+
+<details><summary>App.module.css</summary> 
+<img src="docs/readme/css-validator/pass-css-validator.png"> 
+</details>
+
+<details><summary>Index.css</summary> 
+<img src="docs/readme/css-validator/pass-css-validator.png"> 
+</details>
+
+<details><summary>Asset.module.css</summary> 
+<img src="docs/readme/css-validator/pass-css-validator.png"> 
+</details>
+
+<details><summary>Avatar.module.css</summary> 
+<img src="docs/readme/css-validator/pass-css-validator.png"> 
+</details>
+
+<details><summary>Button.module.css</summary> 
+<img src="docs/readme/css-validator/pass-css-validator.png"> 
+</details>
+
+<details><summary>Comment.module.css</summary> 
+<img src="docs/readme/css-validator/pass-css-validator.png"> 
+</details>
+
+<details><summary>CommentCreateEditForm.module.css</summary> 
+<img src="docs/readme/css-validator/pass-css-validator.png"> 
+</details>
+
+<details><summary>MoreDropdown.module.css</summary> 
+<img src="docs/readme/css-validator/pass-css-validator.png"> 
+</details>
+
+<details><summary>NavBar.module.css</summary> 
+<img src="docs/readme/css-validator/pass-css-validator.png"> 
+</details>
+
+<details><summary>NotFound.module.css</summary> 
+<img src="docs/readme/css-validator/pass-css-validator.png"> 
+</details>
+
+<details><summary>Post.module.css</summary> 
+<img src="docs/readme/css-validator/pass-css-validator.png"> 
+</details>
+
+<details><summary>PostCreateEditForm.module.css</summary> 
+<img src="docs/readme/css-validator/pass-css-validator.png"> 
+</details>
+
+<details><summary>PostsPage.module.css</summary> 
+<img src="docs/readme/css-validator/pass-css-validator.png"> 
+</details>
+
+<details><summary>Profile.module.css</summary> 
+<img src="docs/readme/css-validator/pass-css-validator.png"> 
+</details>
+
+<details><summary>ProfilePage.module.css</summary> 
+<img src="docs/readme/css-validator/pass-css-validator.png"> 
+</details>
+
+<details><summary>SignInUpForm.module.css</summary> 
+<img src="docs/readme/css-validator/pass-css-validator.png"> 
+</details>
+
+<details><summary>Profile.module.css</summary> 
+<img src="docs/readme/css-validator/pass-css-validator.png"> 
+</details>
+
+<details><summary>SubscriptionConfirmation.module.css</summary> 
+<img src="docs/readme/css-validator/pass-css-validator.png"> 
+</details>
+
+
 ## Deployment
 
 ### Deploying to Heroku
