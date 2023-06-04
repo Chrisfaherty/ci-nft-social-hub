@@ -109,6 +109,8 @@ Required functions that the social hub required:
 34. As a user I can view a no results found error page so that I know the page I am on has no content,
 35. As a user I can send a message to the admin if i need assistance with any feature,
 
+[Back to Table Of Contents](#table-of-contents)
+
 ## Design Choices
 
 ### Colour Scheme
@@ -175,7 +177,7 @@ The Post, liked & Feed wireframes are the same. They will vary as different user
 - [Balsamiq](https://balsamiq.com/) used to create wireframes,
 - [Cloudinary](https://cloudinary.com/) used to store static files,
 - [Coolors](https://coolors.co/?home) used to generate the color scheme palette,
-- [Formito](https://favicon.com) used to create the website's favicon,
+- [Favicon](https://favicon.com) used to create the website's favicon,
 - [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools/) used for debugging of the code and checking site for responsiveness,
 - [Google Fonts](https://fonts.google.com/) - Used for the fonts in the website,
 - [GitHub](https://github.com/) used as a remote repository to store project code,
@@ -227,6 +229,7 @@ Reuseability fo components was key to help the pace od constructing the project.
 
 - `<NotFound />` - A unique component that renders the page not found image and message if a 404 error is hit. The navbar is still available on this page so the user can revert to the home page. 
 
+[Back to Table Of Contents](#table-of-contents)
 
 ## Back-End API
 
@@ -358,6 +361,8 @@ The backend API for this Front-End application was built with the Django REST Fr
 <img src="docs/readme/features/not-found-feature.png">
 </details>
 
+[Back to Table Of Contents](#table-of-contents)
+
 ## Future features & improvements
 
 Improvements I would like to add to my site in the future:
@@ -432,6 +437,7 @@ I used the W3C Markup Validation Service to validate my HTML code. As you can se
 <img src="docs/readme/html-validation/not-found-html-validator.png"> 
 </details>
 
+[Back to Table Of Contents](#table-of-contents)
 
 ### CSS
 
@@ -509,6 +515,7 @@ I used the W3C Jigsaw CSS Validation Service to validate the CSS of my website. 
 <img src="docs/readme/css-validator/pass-css-validator.png"> 
 </details>
 
+[Back to Table Of Contents](#table-of-contents)
 
 ### Lighthouse Report
 
@@ -938,6 +945,7 @@ There were no JSX errors and the project compiled sucessfully.
 <img src="docs/readme/manual-testing/user-story-mt-35-3.png">
 </details>
 
+[Back to Table Of Contents](#table-of-contents)
 
 ### Performing Tests
 
@@ -972,6 +980,7 @@ Therefor this project should be tested on Chrome or firefox on desktop.
         I have not been able to resolve this due to the tight time copnstraints of submission and at risk of causing more issues. 
         This is a bug i will fix after submission as i get more time to focus on it. The functionality of the rest of the project meets the project criteria therefore I made the decision to keep this bug unresolved.
 
+[Back to Table Of Contents](#table-of-contents)
 
 ## Deployment
 
@@ -1004,7 +1013,7 @@ Therefor this project should be tested on Chrome or firefox on desktop.
     <details><summary>Screenshots</summary>
     <img src="docs/readme/deployment/heroku_7.png">
     </details>
-* Create a new app, create a name for your app "ci_pp3_ppm" and choose your region,
+* Create a new app, create a name for your app "ci_nft_social_hub" and choose your region,
     <details><summary>Screenshots</summary>
     <img src="docs/readme/deployment/heroku_8.png">
     </details>
@@ -1012,23 +1021,14 @@ Therefor this project should be tested on Chrome or firefox on desktop.
     <details><summary>Screenshots</summary>
     <img src="docs/readme/deployment/heroku_9.png">
     </details>
-* Click Reveal Config Vars,
-    <details><summary>Screenshots</summary>
-    <img src="docs/readme/deployment/heroku_10.png">
-    </details>
-* Input your .json file. name in the 'Key' field, copy the .json file and paste it in 'Value' field. Also add a key 'PORT' and value '8000'.
-    <details><summary>Screenshots</summary>
-    <img src="docs/readme/deployment/heroku_11.png">
-    </details>
-* In the build packs section click add buildpack. For this project, I added 2 buildpacks 'Python' and 'node.js'. Make sure the Python build pack is above the Nodejs buildpack.
-    <details><summary>Screenshots</summary>
-    <img src="docs/readme/deployment/heroku_12.png">
-    </details>
+
+* In the build packs section click add buildpack. For this project, I added 'node.js'. 
+
 * Go to "Deploy" in "Deployment method" select "GitHub",
     <details><summary>Screenshots</summary>
     <img src="docs/readme/deployment/heroku_13.png">
     </details>
-* Click 'Search' (Enter in your projects name that you have in your github repositry)and then 'Connect'. This project is connected to Chrisfaherty/CI_PP3_PPM.
+* Click 'Search' (Enter in your projects name that you have in your github repositry)and then 'Connect'. This project is connected to Chrisfaherty/ci-nft-social-hub.
     <details><summary>Screenshots</summary>
     <img src="docs/readme/deployment/heroku_14.png">
     </details>
@@ -1043,11 +1043,36 @@ Therefor this project should be tested on Chrome or firefox on desktop.
     </details>
 * Once the code is deployed it will show a button that you can click to view the deployed site. Then the project has sucessfully been deployed.
 
+* Make sure you have a Procfile with this line of code in it web: serve -s build to configure your dynos.
+
+* An "Open App" button will apear on the top right, click it to open your newly deployed project, Click that and that will bring you to your deployed app.
+
 
 ### Forking the GitHub Repository
-* Go to the GitHub repository,
-* In the top right hand corner you can click on the fork button,
-* This will fork the repositry.
+
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/chrisfaherty/ci-nft-social-hub)
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
+
+### Making a Local Clone
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/chrisfaherty/ci-nft-social-hub)
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone`, and then paste the URL you copied in Step 3.
+
+```
+$ git clone https://github.com/chrisfaherty/ci-nft-social-hub
+```
+
+7. Press Enter. Your local clone will be created.
+
+Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
+
 
 ## Credits
 * The Code Institute sections.
@@ -1059,6 +1084,7 @@ Therefor this project should be tested on Chrome or firefox on desktop.
 ## Acknowledgements
 I would like to take the opertunity to thank:
 * My Mentor Mo Shami for the great feedback productive meetings and guiding me to finishing this project.
+* Niamh Faherty for creating the Logo for this project.
 * I would also like to thank the Code institute team for all the support and material to assist with this project.
 * The code institute Tutors for being available when ever guidance was required.
 * I would like to thank Nick Coles & Chris Browning for the help with problem solving and independant reviews.
