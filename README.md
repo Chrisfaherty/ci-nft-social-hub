@@ -189,6 +189,44 @@ The Post, liked & Feed wireframes are the same. They will vary as different user
 - [Lighthouse Tools](https://developers.google.com/web/tools/lighthouse/) used to validate performance, accessibility, best practices and SEO of my website
 - [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/) was used to validate my CSS
 
+## Front-End
+
+### React
+
+React is a popular and widely-used JavaScript library for building user interfaces. Developed by Facebook, React allows developers to create reusable UI components and manage the state of those components, making it easy to build complex, dynamic, and interactive web applications. React utilizes a virtual DOM, which allows for efficient updates and rendering of components, resulting in fast and responsive applications. With a large and active community, a vast ecosystem of supporting tools and libraries, and a focus on declarative and component-based programming, React has become one of the most popular choices for building modern web applications.
+
+React was used to build this application for the following reasons:
+
+1. Reusability: React's component-based architecture makes it easy to reuse code, allowing you to save time and effort when building your application.
+
+2. Performance: React's use of a virtual DOM allows for fast and efficient updates and rendering of components, resulting in a highly performant user interface.
+
+3. Large and Active Community: React has a large and active community, with a vast ecosystem of supporting tools and libraries, which makes it easier to find solutions to problems and stay up-to-date on the latest developments.
+
+4. Declarative Programming: React allows for declarative programming, which makes it easier to understand and reason about your code, and reduces the likelihood of bugs and errors.
+
+5. Scalability: React is highly scalable, making it well-suited for applications of all sizes, from small, simple projects to large, complex applications.
+
+I was able to use varios components in React throughout this project. 
+
+Reuseability fo components was key to help the pace od constructing the project. 
+
+- `<Asset />` - Theasset component changed the asset displayed depending on the props provided These props were:
+
+  - a loading spinner was diosplayed while loading the content from the database
+  - an image with a src attribute
+  - a message rendered in a paragraph tag
+
+- `<Avatar />` - This component allowed the loged in users avatar to be displayed in different locations (Profiles, posts and comments). The avatar would display beside the users posts and comments while they are logged out as well. 
+
+- `<DropdownMenu />` - A reusable component that renders the dropdown menu- allowing a user to edit or remove their own content. This can be seen on many pages, for example the post page (own post editing), profile page (editing own profile data) and comments editing.
+
+- `<NavBar />` - A reusable component that is rendered on every page. The content within the navbar changes depending on the authentication status of a user (if not logged in, display icons for login/signup). When a user is logged in, they are shown the avatar component and a dropdown menu allowing them to logout or access their profile.
+
+- `<HomePage />` - A unique component that renders the homepage for users that are not logged in, displaying login/signup buttons for a user.
+
+- `<NotFound />` - A unique component that renders the page not found image and message if a 404 error is hit. The navbar is still available on this page so the user can revert to the home page. 
+
 
 ## Deployment
 
