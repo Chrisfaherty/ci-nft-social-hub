@@ -228,6 +228,137 @@ Reuseability fo components was key to help the pace od constructing the project.
 - `<NotFound />` - A unique component that renders the page not found image and message if a 404 error is hit. The navbar is still available on this page so the user can revert to the home page. 
 
 
+## Back-End API
+
+### Django REST Framework
+
+The backend API for this Front-End application was built with the Django REST Framework. Details about my backend repository can be viewed [here](https://github.com/Chrisfaherty/ci-nft-social-hub-api)
+
+# Application Features and Screenshots
+
+### Home Page (Logged Out)
+
+- An overview of of the current posts users have created,
+- NavBar links to Enter(Login), Join(Signup) and and also to subscribe to hear about new features,
+- Users can also view the most followed profiles.
+
+<details><summary>Homepage Screenshot</summary>
+<img src="docs/readme/features/homepage-loggedout-feature.png">
+</details>
+
+### NavBar
+
+- The Navbar can be found on every page,
+- If the user is logged out the following is displayed on the navbar "Home", "Enter", "Join", "Subscribe" Buttons
+- If the user is logged in - following is displayed "Post", "Home", "Feed", "Liked", "Exit", "Profile" and "Contact" Buttons.
+- "NFT Social hub" logo is always displayed.
+- On mobile screens the navbar links are added to a hamburger menur to allow for more space on the Navbar.
+
+<details><summary>NavBar Screenshot</summary>
+<img src="docs/readme/features/navbar-loggedin-feature.png">
+<img src="docs/readme/features/navbar-loggedout-feature.png">
+</details>
+
+### Sign Up Form
+
+- Allows new users to create an account,
+- The user must provide a valid username (not taken), password and confirm password,
+- Usernames are unique and two with the same name cannot be created,
+- User is redirected to login page once the signup form is submitted and the username and password is accepted,
+
+<details><summary>Sign Up Form Screenshot</summary>
+<img src="docs/readme/features/sign-up-feature.png">
+</details>
+
+### Sign In Form
+
+- Previous users with created accounts can use this form to log in,
+- The account must be valid,
+- The password must match what was initially created with the username,
+- Error messages are be displayed if the details don't match,
+- The logged in user is then redirected to the homepage,sign-in-form-feature
+
+<details><summary>Sign In Form Screenshot</summary>
+<img src="docs/readme/features/signin-feature.png">
+</details>
+
+### Post Creation and Edit Form
+
+- This form is where you input the post image and can fill out the details (Title, category, ect),
+- Images and posts can be created and added to your feed to share your NFT's,
+- The same form is used for editing a post but the details are prepopulated so you can easly see what you would like to change,
+
+<details><summary>Post Creation and Edit Screenshot</summary>
+<img src="docs/readme/features/post-create-edit-feature.png">
+</details>
+
+### Posts, Feed, Liked Page
+
+- The post, feed and liked pages are visually the same. They just vary depending on the user their likes and follows,
+- The post page is the same as the home page it displays all user posts assorted by creation date,
+- The liked page, will display all pages the user liked,
+- The feed page, Will display all posts by the users you follow,
+- Search bar can be used to specify content seen.post-feed-like-page-feature,
+- Loggedin users can also see the most followed profiles and decide to follow or unfollow them with the follow/unfollow button,
+- The search bar can be used to serch for users posts or posts with specific key words in them.
+
+<details><summary>Post, Feed and Liked Feature Screenshot</summary>
+<img src="docs/readme/features/post-edit-like-page-feature.png">
+</details>
+
+### Post Page
+
+- This contains specific details tied to a single post (title, image, content, website links, ect),
+- This page contains:
+  - Number of likes and like button for user like functionality,
+  - Number of dislikes and dislike button for the users dislike functionality,
+  - Number of comments and comment button to allow the user to comment,
+  - Comment section to display all comments on a post.
+
+<details><summary>Post Detail Feature Screenshot</summary>
+<img src="docs/readme/features/post-detail-feature.png">
+</details>
+
+### Comments Section
+
+- This allows users to leave comments on a post,
+- This page contains the comments and date/user who created the comment.
+
+<details><summary>Comment Feature Screenshot</summary>
+<img src="docs/readme/features/comment feature.png">
+</details>
+
+### Profile Page
+
+- Contains user profile information,
+- The users profile picture is shown here, it is assigned a place holder but can use the dropdown to edit the picture,
+- Shows how many posts the user has created, followers and following,
+- Contains a dropdown menu to edit the profile and change profile password over in the right hand corner (3 dots),
+- If a user has added a bio, this is displayed here,
+- The users posts are also displayed here.
+
+<details><summary>Profile Page Feature Screenshot</summary>
+<img src="docs/readme/features/profile-page-feature.png">
+</details>
+
+### User Edit Profile, Password Form
+
+- The user can use this form to edit details in their profile and also change their username and password.
+
+<details><summary>Edit Profile & Password Feature Screenshot</summary>
+<img src="docs/readme/features/edit-profile-password-feature.png">
+</details>
+
+### Not Found Page
+
+- If a URL that doesn't exist is entered, this page is displayed to give visual feedback to the user that it is incorrect
+- The navbar is still displayed so the user can revert back to the home page.
+
+<details><summary>Not Found Feature Screenshot</summary>
+<img src="docs/readme/features/not-found-feature.png">
+</details>
+
+
 ## Deployment
 
 ### Deploying to Heroku
