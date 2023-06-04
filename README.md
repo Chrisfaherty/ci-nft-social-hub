@@ -522,6 +522,15 @@ Lighthouse was used to test the performance, accessibility, best practice and SE
 <img src="docs/readme/lighthouse-validator/home-lighthouse-mobile.png"> 
 </details>
 
+### JSX
+
+ESLint was installed initially when the project was created and has been running as the project was being developed. 
+There were no JSX errors and the project compiled sucessfully.
+
+<details><summary>Eslint validation for all files</summary> 
+<img src="docs/readme/jsx-validation.png"> 
+</details>
+
 
 ## Deployment
 
