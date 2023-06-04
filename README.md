@@ -8,7 +8,7 @@
 
 ### [View Live Website](https://ci-nft-social-hub.herokuapp.com/)
 
-![ImageFrames of website](./docs/readme/)
+![ImageFrames of website](docs/readme/am-i-responsive-image.png)
 
 ## Table of Contents
 
@@ -625,6 +625,95 @@ There were no JSX errors and the project compiled sucessfully.
 
 <details><summary>User Story Test Screenshots</summary>
 <img src="docs/readme/manual-testing/user-story-mt-8-1.png">
+</details>
+
+9.  As a logged in user I can create posts to share my NFT projects with other users.
+
+| **Action**                              | **Expected Result**                         | **Actual Result** |
+| --------------------------------------- | ------------------------------------------- | ----------------- |
+| Click on the post link in the nav bar   | This will bring you to the create post page | Works as expected |
+| Fill in the post details & click create | This will bring you to the post page        | Works as expected |
+
+<details><summary>User Story Test Screenshots</summary>
+<img src="docs/readme/manual-testing/user-story-mt-9-1.png">
+<img src="docs/readme/manual-testing/user-story-mt-9-2.png">
+</details>
+
+10. As a user I can view the details of a single post so that I can learn more about it,
+
+| **Action**                                                             | **Expected Result**                                                                          | **Actual Result** |
+| ---------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | ----------------- |
+| Click on the post image of the post you want to see more details about | If I click a profile image, it should take me to a user's profile containing all their posts | Works as expected |
+
+<details><summary>User Story Test Screenshots</summary>
+<img src="docs/readme/manual-testing/user-story-mt-10-1.png">
+<img src="docs/readme/manual-testing/user-story-mt-10-2.png">
+</details>
+
+11. As a user I can like a post so that I can show my support for the posts that interest me,
+
+| **Action**                                                      | **Expected Result**                                      | **Actual Result** |
+| --------------------------------------------------------------- | -------------------------------------------------------- | ----------------- |
+| Underneath any post you can click on the heart to like the post | The heart will change color and update the count to by 1 | Works as expected |
+
+<details><summary>User Story Test Screenshots</summary>
+<img src="docs/readme/manual-testing/user-story-mt-11-1.png">
+<img src="docs/readme/manual-testing/user-story-mt-11-2.png">
+
+</details>
+
+12. As a user I can view all the most recent posts, ordered by most recently created first so that I am up to date with the newest content,
+
+| **Action**                                                               | **Expected Result**                                               | **Actual Result** |
+| ------------------------------------------------------------------------ | ----------------------------------------------------------------- | ----------------- |
+| Navigate to the home page and the first post displayed is the latest one | The first post displayed will be the latest post that was created | Works as expected |
+
+<details><summary>User Story Test Screenshots</summary>
+<img src="docs/readme/manual-testing/user-story-mt-12-1.png">
+</details>
+
+13. As a user I can search for posts with keywords, so that I can find the posts and user profiles I am most interested in,
+
+| **Action**                                                                      | **Expected Result**                                                              | **Actual Result** |
+| ------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | ----------------- |
+| Navigate to the home page and you will find the search bar above the first post | Type in details about what you are looking for and it should find a related post | Works as expected |
+
+<details><summary>User Story Test Screenshots</summary>
+<img src="docs/readme/manual-testing/user-story-mt-13-1.png">
+<img src="docs/readme/manual-testing/user-story-mt-13-2.png">
+</details>
+
+14. As a user I can view the posts I liked so that I can find the posts I enjoy the most
+
+| **Action**                            | **Expected Result**                          | **Actual Result** |
+| ------------------------------------- | -------------------------------------------- | ----------------- |
+| In the navbar clink on the Liked link | All posts the user liked should be displayed | Works as expected |
+
+<details><summary>User Story Test Screenshots</summary>
+<img src="docs/readme/manual-testing/user-story-mt-14-1.png">
+<img src="docs/readme/manual-testing/user-story-mt-14-2.png">
+</details>
+
+15. As a user I can view content filtered by users I follow so that I can keep up to date with what they are posting about,
+
+| **Action**                                                                                      | **Expected Result**                                      | **Actual Result** |
+| ----------------------------------------------------------------------------------------------- | -------------------------------------------------------- | ----------------- |
+| In the home page on the right hand side click on the follow button for users you want to follow | The user will be followed and button changes to unfollow | Works as expected |
+| Click on Feed in the navbar                                                                     | The posts displayed will be from users you follow        | Works as expected |
+
+<details><summary>User Story Test Screenshots</summary>
+<img src="docs/readme/manual-testing/user-story-mt-15-1.png">
+<img src="docs/readme/manual-testing/user-story-mt-15-2.png">
+</details>
+
+16. As a user I can keep scrolling through the images on the site, thay are loaded for me automatically so that I don't have to click on "next page" etc,
+
+| **Action**                                    | **Expected Result**                                     | **Actual Result** |
+| --------------------------------------------- | ------------------------------------------------------- | ----------------- |
+| Navigate to the home page and start scrolling | The posts will keep being added until there are no more | Works as expected |
+
+<details><summary>User Story Test Screenshots</summary>
+<img src="docs/readme/manual-testing/user-story-mt-16-1.png">
 </details>
 
 
