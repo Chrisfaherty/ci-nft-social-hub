@@ -515,6 +515,80 @@ The backend API for this Front-End application was built with the Django REST Fr
     <img src="docs/readme.md/deployment/gitpod-6.png">
     </details>
 
+## Future features & improvements
+
+Improvements I would like to add to my site in the future:
+
+- Authentication
+  - Allow account creation and signup using different social media platform accounts (Google, Facebook etc.)
+  - Allow login with users metamast (Eth wallets)
+  - Password reset feature for the user if they forget theirs
+- Posts
+  - Connecting the avatar and post images to the specific IPFS storage location of the image,
+- Profile
+  - Profiles to be connected to soulbound tokens so that is your login in the future
+- Comments
+  - Comment liking
+- Subscription & Contact
+    - I would like to have email feedback to the sender when these forms submit in the future.
+- App rework for ios and mobile display bugs
+  - Ability to authenticate the user on mobile
+
+## Validation
+
+### HTML
+
+I used the W3C Markup Validation Service to validate my HTML code. As you can see, no errors were found within my HTML.
+
+<details><summary>Home page (Logged Out)</summary> 
+<img src="docs/readme/html-validation/home-html-validation.png"> 
+</details> 
+<details><summary>Signin Page</summary> 
+<img src="docs/readme/html-validation/signin-html-validation.png"> 
+</details> 
+<details><summary>Sign Up Page</summary> 
+<img src="docs/readme/html-validation/signup-html-validation.png"> 
+</details> 
+<details><summary>Feed Page</summary> 
+<img src="docs/readme/html-validation/feed-html-validation.png"> 
+</details> 
+<details><summary>Liked Posts Page</summary> 
+<img src="docs/readme/html-validation/liked-html-validation.png"> 
+</details> 
+<details><summary>Create Post Page</summary> 
+<img src="docs/readme/html-validation/posts-html-validation.png"> 
+</details> 
+<details><summary>Edit Post Page</summary> 
+<img src="docs/readme/html-validation/edit-post-html-validation.png"> 
+</details> 
+<details><summary>Profiles Page</summary> 
+<img src="docs/readme/html-validation/profile-html-validation.png"> 
+</details> 
+<details><summary>Edit Profile Page</summary> 
+<img src="docs/readme/html-validation/edit-profile-html-validation.png"> 
+</details> 
+<details><summary>Edit Password Page</summary> 
+<img src="docs/readme/html-validation/edit-password-html-validation.png"> 
+</details> 
+<details><summary>Edit Username Page</summary> 
+<img src="docs/readme/html-validation/edit-username-html-validation.png"> 
+</details>
+</details> 
+<details><summary>Post ID Page</summary> 
+<img src="docs/readme/html-validation/post-id-html-validation.png"> 
+</details> 
+</details> 
+<details><summary>Subscribe Page</summary> 
+<img src="docs/readme/html-validation/subscription-html-validation.png"> 
+</details>
+</details> 
+<details><summary>Contact Page</summary> 
+<img src="docs/readme/html-validation/contact-html-validation.png"> 
+</details> 
+<details><summary>Not Found Page</summary> 
+<img src="docs/readme/html-validation/not-found-html-validator.png"> 
+</details>
+
 ### Connecting to Cloudinary
 
 * Visit https://cloudinary.com
