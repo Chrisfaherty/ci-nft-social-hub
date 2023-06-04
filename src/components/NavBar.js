@@ -93,7 +93,7 @@ const NavBar = () => {
       <NavLink
         className={styles.NavLink}
         activeClassName={styles.Active}
-        to="/subscription"
+        to="/subscriptions"
       >
         <i className="far fa-envelope"></i>Subscribe
       </NavLink>

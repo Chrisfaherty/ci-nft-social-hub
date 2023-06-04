@@ -58,7 +58,7 @@ function App() {
           />
           <Route exact path="/signin" render={() => <SignInForm />} />
           <Route exact path="/signup" render={() => <SignUpForm />} />
-          <Route exact path="/subscription" render={() => <SubscriptionForm />}/>
+          <Route exact path="/subscriptions" render={() => <SubscriptionForm />}/>
           <Route exact path="/confirmation" render={() => <Confirmation />} />
           <Route exact path="/messageconfirmation" render={() => <MessageConfirmationForm />} />
           <Route exact path="/subscriptionmessages" render={() => <SubscriptionMessageForm />} />

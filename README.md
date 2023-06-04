@@ -893,6 +893,51 @@ There were no JSX errors and the project compiled sucessfully.
 </details>
 
 
+32. As a site owner I want my site to flow smoothly so users can navigate it with out any issues,
+
+| **Action**                                                     | **Expected Result**                                                      | **Actual Result** |
+| -------------------------------------------------------------- | ------------------------------------------------------------------------ | ----------------- |
+| View all the links on the navbar for both logged in and logged out users | The user can move about the site smoothly | Works as expected |
+
+<details><summary>User Story Test Screenshots</summary>
+<img src="docs/readme/manual-testing/user-story-mt-32-1.png">
+<img src="docs/readme/manual-testing/user-story-mt-32-2.png">
+</details>
+
+33. As a site owner I want the user to be able to subscribe to my mailing list so I can reach out to them whenever I have any new features being released,
+
+| **Action**                                               | **Expected Result**                                                                   | **Actual Result** |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------------- | ----------------- |
+| in the navbar click on the suscribe line, then input your information and click submit | the user navigates to the subscribe page and submits their details and a confirmation page is displayed | Works as expected |
+
+<details><summary>User Story Test Screenshots</summary>
+<img src="docs/readme/manual-testing/user-story-mt-33-1.png">
+<img src="docs/readme/manual-testing/user-story-mt-33-2.png">
+<img src="docs/readme/manual-testing/user-story-mt-33-3.png">
+</details>
+
+34. As a user I can view a no results found error page so that I know the page I am on has no content,
+
+| **Action**                                                                    | **Expected Result**                                                                  | **Actual Result** |
+| ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ----------------- |
+| The user visits a url that is not valid for the site | A no results found page will be displayed | Works as expected |
+
+<details><summary>User Story Test Screenshots</summary>
+<img src="docs/readme/manual-testing/user-story-mt-34-1.png">
+</details>
+
+35. As a user I can send a message to the admin if i need assistance with any feature,
+
+| **Action**                   | **Expected Result**                                                      | **Actual Result** |
+| ---------------------------- | ------------------------------------------------------------------------ | ----------------- |
+| click on contact in the logged in navbar, then submit your details | The user will be brought to a confirmation message | Works as expected |
+
+<details><summary>User Story Test Screenshots</summary>
+<img src="docs/readme/manual-testing/user-story-mt-35-1.png">
+<img src="docs/readme/manual-testing/user-story-mt-35-2.png">
+<img src="docs/readme/manual-testing/user-story-mt-35-3.png">
+</details>
+
 ## Deployment
 
 ### Deploying to Heroku
