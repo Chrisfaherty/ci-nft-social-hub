@@ -510,6 +510,19 @@ I used the W3C Jigsaw CSS Validation Service to validate the CSS of my website. 
 </details>
 
 
+### Lighthouse Report
+
+Lighthouse was used to test the performance, accessibility, best practice and SEO of the site. The validation was done for both desktop & mobile.
+
+<details><summary>Desktop</summary> 
+<img src="docs/readme/lighthouse-validator/home-lighthouse-desktop.png"> 
+</details>
+
+<details><summary>Mobile</summary> 
+<img src="docs/readme/lighthouse-validator/home-lighthouse-mobile.png"> 
+</details>
+
+
 ## Deployment
 
 ### Deploying to Heroku
