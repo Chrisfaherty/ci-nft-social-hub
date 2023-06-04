@@ -532,6 +532,102 @@ There were no JSX errors and the project compiled sucessfully.
 </details>
 
 
+## Testing
+
+### Manual testing of user stories
+
+1. As a user I can view a navbar from every page so that I can navigate easily between pages,
+
+| **Action**                                     | **Expected Result**                                                                                                           | **Actual Result** |
+| ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| Go to https://ci-nft-social-hub.herokuapp.com/ | Home Page when logged out shows the Navbar and its functions                                                                  | Works as expected |
+| Go to the Join button in the Navbar            | This takes you to the signup page where you create your login details and when you create them it takes you to the login form | Works as expected |
+| Login to your account                          | This will bring you to the logged in home page where you have different items in your navbar                                  | Works as expected |
+
+<details><summary>User Story Test Screenshot</summary>
+<img src="docs/readme/manual-testing/user-story-mt-1-1.png">
+<img src="docs/readme/manual-testing/user-story-mt-1-2.png">
+<img src="docs/readme/manual-testing/user-story-mt-1-3.png">
+<img src="docs/readme/manual-testing/user-story-mt-1-4.png">
+</details>
+
+2.  As a user I can navigate through pages quickly so that I can view content seamlessly without page refresh,
+
+| **Action**                                           | **Expected Result**                                 | **Actual Result** |
+| ---------------------------------------------------- | --------------------------------------------------- | ----------------- |
+| In the posts page scroll down past 10 posts and the new posts keep loading | The infinity scroll activates after 10 posts to keep loading the scroll bar at the side of the page reduces in size| Works as expected |
+
+<details><summary>User Story Test Screenshot</summary>
+<img src="docs/readme/manual-testing/user-story-mt-2-1.png">
+<img src="docs/readme/manual-testing/user-story-mt-2-2.png">
+
+</details>
+
+3.  As a user I can create a new account so that I can access all the features for signed up users
+
+| **Action**                                                   | **Expected Result**                                             | **Actual Result** |
+| ------------------------------------------------------------ | --------------------------------------------------------------- | ----------------- |
+| View login and signup buttons to create an account or log in | Navbar shows different login/signup links to logged out users | Works as expected |
+
+<details><summary>User Story Test Screenshot</summary>
+<img src="docs/readme/manual-testing/user-story-mt-3-1.png">
+</details>
+
+4.  As a user I can sign in to the app so that I can access functionality for logged in users
+
+| **Action**                       | **Expected Result**                                                          | **Actual Result** |
+| -------------------------------- | ---------------------------------------------------------------------------- | ----------------- |
+| Create an account in signup form | Site allows me to create an account using the signup form and sign in afterwards | Works as expected |
+
+<details><summary>User Story Test Screenshot</summary>
+<img src="docs/readme/manual-testing/user-story-mt-4-1.png">
+<img src="docs/readme/manual-testing/user-story-mt-4-2.png">
+<img src="docs/readme/manual-testing/user-story-mt-4-3.png">
+</details>
+
+5.  As a user I can tell if I am logged in or not so that I can log in if I need to,
+
+| **Action**                          | **Expected Result**                                                     | **Actual Result** |
+| ----------------------------------- | ----------------------------------------------------------------------- | ----------------- |
+| The Navbar will display Enter if your logged in or Exit if your logged out | Logged in user sees Exit on navbar | Works as expected |
+
+<details><summary>User Story Test Screenshots</summary>
+<img src="docs/readme/manual-testing/user-story-mt-5-1.png">
+</details>
+
+6.  As a user I can maintain my logged-in status until I choose to log out so that my user experience is not compromised,
+
+| **Action**                                                                     | **Expected Result**                                                        | **Actual Result** |
+| ------------------------------------------------------------------------------ | -------------------------------------------------------------------------- | ----------------- |
+| Login and check the nav bar to see if your logged in | Exit is displayed on the navbar showing the user is logged in | Works as expected |
+| Hard refresh the page and check if the user is still logged in | Exit is displayed on the navbar showing the user is still logged in | Works as expected |
+
+<details><summary>User Story Test Screenshots</summary>
+<img src="docs/readme/manual-testing/user-story-mt-6-1.png">
+<img src="docs/readme/manual-testing/user-story-mt-6-2.png">
+</details>
+
+7.  As a logged out user I can see sign in and sign up options so that I can sign in/sign up,
+
+| **Action**                                               | **Expected Result**                                                                         | **Actual Result** |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ----------------- |
+| Go to the home page and check the navbar to see if it says Enter or Exit | the navbar will display enter and join for logged out users | Works as expected |
+
+<details><summary>User Story Test Screenshots</summary>
+<img src="docs/readme/manual-testing/user-story-mt-7-1.png">
+</details>
+
+8.  As a user I can view user's avatars so that I can easily identify users of the application,
+
+| **Action**                                        | **Expected Result**                                                     | **Actual Result** |
+| ------------------------------------------------- | ----------------------------------------------------------------------- | ----------------- |
+| Log in to your account and check for Avatars beside users posts | Avatars should be displayed beside a users username in their posts | Works as expected |
+
+<details><summary>User Story Test Screenshots</summary>
+<img src="docs/readme/manual-testing/user-story-mt-8-1.png">
+</details>
+
+
 ## Deployment
 
 ### Deploying to Heroku
