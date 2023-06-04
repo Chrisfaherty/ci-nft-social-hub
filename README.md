@@ -811,6 +811,87 @@ There were no JSX errors and the project compiled sucessfully.
 <img src="docs/readme/manual-testing/user-story-mt-24-1.png">
 </details>
 
+25. As a user I can view other users profiles so that I can see their posts and learn more about them,
+
+| **Action**                                      | **Expected Result**                                            | **Actual Result** |
+| ----------------------------------------------- | -------------------------------------------------------------- | ----------------- |
+| On the right hand side on the home page click on any profile you would like yo view | The user is brought to the users profile | Works as expected |
+
+<details><summary>User Story Test Screenshots</summary>
+<img src="docs/readme/manual-testing/user-story-mt-25-1.png">
+<img src="docs/readme/manual-testing/user-story-mt-25-2.png">
+
+</details>
+
+26. As a user I can see a list of the most followed profiles so that I can see which profiles are popular,
+
+| **Action**                                    | **Expected Result**                                                             | **Actual Result** |
+| --------------------------------------------- | ------------------------------------------------------------------------------- | ----------------- |
+| On the right hand side of the home page you can see the most popular profiles | A list of the most popular profiles are displayed | Works as expected |
+
+<details><summary>User Story Test Screenshots</summary>
+<img src="docs/readme/manual-testing/user-story-mt-26-1.png">
+</details>
+
+27. As a user I can view statistics about a specific user: bio, number of posts, follows and users followed so that I can learn more about them,
+
+| **Action**                                      | **Expected Result**                                          | **Actual Result** |
+| ----------------------------------------------- | ------------------------------------------------------------ | ----------------- |
+| Click on any users avitar and you will see the stats in their profile | the user is taken to the other users profile and the stats are displayed | Works as expected |
+
+<details><summary>User Story Test Screenshots</summary>
+<img src="docs/readme/manual-testing/user-story-mt-27-1.png">
+
+</details>
+
+28. As a user I can follow and unfollow other users so that I can see and remove posts by specific users in my posts feed,
+
+| **Action**                            | **Expected Result**                                       | **Actual Result** |
+| ------------------------------------- | --------------------------------------------------------- | ----------------- |
+| On the home page in the most populat profiles you are able to follow and unfollow users | If you click follow it will change the button to unfollow | Works as expected |
+
+<details><summary>User Story Test Screenshots</summary>
+<img src="docs/readme/manual-testing/user-story-mt-28-1.png">
+<img src="docs/readme/manual-testing/user-story-mt-28-2.png">
+
+</details>
+
+29. As a user I can view all the posts by a specific user so that I can catch up on their latest posts, or decide I want to follow them,
+
+| **Action**                                  | **Expected Result**                 | **Actual Result** |
+| ------------------------------------------- | ----------------------------------- | ----------------- |
+| Click on the avatar of the user you want to check out | the user is brought to their profile where they can see all their posts | Works as expected |
+
+<details><summary>User Story Test Screenshots</summary>
+<img src="docs/readme/manual-testing/user-story-mt-29-1.png">
+<img src="docs/readme/manual-testing/user-story-mt-29-2.png">
+</details>
+
+30. As a user I can edit my profile so that I can change my profile picture and bio,
+
+| **Action**                                                       | **Expected Result**                                                                                            | **Actual Result** |
+| ---------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ----------------- |
+| On your profile page click on the 3 dots in the top right hand corner under the nav bar | Opens up a drop down list | Works as expected |
+| Click on edit profile and then once you change the details click save | Opens up the edit profile page | Works as expected |
+
+<details><summary>User Story Test Screenshots</summary>
+<img src="docs/readme/manual-testing/user-story-mt-30-1.png">
+<img src="docs/readme/manual-testing/user-story-mt-30-2.png">
+<img src="docs/readme/manual-testing/user-story-mt-30-3.png">
+</details>
+
+31. As a user I can update my username and password so that I can change my display name and keep my profile secure
+
+| **Action**        | **Expected Result**                                                              | **Actual Result** |
+| ----------------- | -------------------------------------------------------------------------------- | ----------------- |
+| On your profile page click on the 3 dots in the top right hand corner under the nav bar | Opens up a drop down list | Works as expected |
+| Click on edit user name or password and then once you change the details click save | Opens up the edit user name or edit password page | Works as expected |
+
+<details><summary>User Story Test Screenshots</summary>
+<img src="docs/readme/manual-testing/user-story-mt-31-1.png">
+<img src="docs/readme/manual-testing/user-story-mt-31-2.png">
+</details>
+
 
 ## Deployment
 
