@@ -38,7 +38,7 @@
 
 ## About
 
-The NFT Social Hub is place where current or future NFT holders no matter what type of NFT can join and shire information about their project. Users that create an account will be able to post, like, comment and follow other users to keep track of projects they are interested in.
+The NFT Social Hub is place where current or future NFT holders no matter what type of NFT can join and share information about their project. Users that create an account and will be able to post, like, comment and follow other users to keep track of projects they are interested in.
 This Hub is for all holders to share their thoughts and collaborate with each other.
 
 ## Project Goals
@@ -127,7 +127,7 @@ The fonts used for this project were from Google Fonts. It was Source Serif Pro 
 
 ### Wireframes
 
-- [Balsamiq Wireframes](https://balsamiq.com/) was used to generate the wirreframes for this project. Wireframes for both mobile and desktop views were created.
+- [Balsamiq Wireframes](https://balsamiq.com/) was used to generate the wireframes for this project. Wireframes for both mobile and desktop views were created.
 
 The Post, liked & Feed wireframes are the same. They will vary as different users like and follow different accounts.
 
@@ -174,21 +174,21 @@ The Post, liked & Feed wireframes are the same. They will vary as different user
 ### Tools & Programs
 
 - [Amiresponsive](https://ui.dev/amiresponsivecom/) was used to create the readme cover image,
-- [Balsamiq](https://balsamiq.com/) used to create wireframes,
-- [Cloudinary](https://cloudinary.com/) used to store static files,
-- [Coolors](https://coolors.co/?home) used to generate the color scheme palette,
-- [Favicon](https://favicon.com) used to create the website's favicon,
-- [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools/) used for debugging of the code and checking site for responsiveness,
-- [Google Fonts](https://fonts.google.com/) - Used for the fonts in the website,
-- [GitHub](https://github.com/) used as a remote repository to store project code,
-- [Git](https://git-scm.com/) used to commit and push my repository changes to github
-- [Font Awesome](https://fontawesome.com/) - used for the icons in the website,
-- [React Spinners](https://www.npmjs.com/package/react-spinners) - used to generate the loading spinners
-- [Gitpod](https://www.gitpod.io/) - Was my chosen workspace to code this project
+- [Balsamiq](https://balsamiq.com/) was used to create wireframes,
+- [Cloudinary](https://cloudinary.com/) was used to store static files,
+- [Coolors](https://coolors.co/?home) was used to generate the color scheme palette,
+- [Favicon](https://favicon.com) was used to create the website's favicon,
+- [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools/) was used for debugging of the code and checking site for responsiveness,
+- [Google Fonts](https://fonts.google.com/) - was used for the fonts in the website,
+- [GitHub](https://github.com/) was used as a remote repository to store project code,
+- [Git](https://git-scm.com/) was used to commit and push my repository changes to github
+- [Font Awesome](https://fontawesome.com/) - was used for the icons in the website,
+- [React Spinners](https://www.npmjs.com/package/react-spinners) - was used to generate the loading spinners
+- [Gitpod](https://www.gitpod.io/) - was my chosen workspace to code this project
 - [Heroku](https://dashboard.heroku.com/apps) was used to deploy my code live
-- [ESLint](https://eslint.org/) used to validate JSX code
+- [ESLint](https://eslint.org/) was used to validate JSX code
 - [WC3 Validator](https://validator.w3.org/) was used to validate my HTML
-- [Lighthouse Tools](https://developers.google.com/web/tools/lighthouse/) used to validate performance, accessibility, best practices and SEO of my website
+- [Lighthouse Tools](https://developers.google.com/web/tools/lighthouse/) was used to validate performance, accessibility, best practices and SEO of my website
 - [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/) was used to validate my CSS
 
 ## Front-End
@@ -213,7 +213,7 @@ I was able to use varios components in React throughout this project.
 
 Reuseability fo components was key to help the pace od constructing the project. 
 
-- `<Asset />` - Theasset component changed the asset displayed depending on the props provided These props were:
+- `<Asset />` - The Asset component changed the asset displayed depending on the props provided These props were:
 
   - a loading spinner was diosplayed while loading the content from the database
   - an image with a src attribute
@@ -221,7 +221,7 @@ Reuseability fo components was key to help the pace od constructing the project.
 
 - `<Avatar />` - This component allowed the loged in users avatar to be displayed in different locations (Profiles, posts and comments). The avatar would display beside the users posts and comments while they are logged out as well. 
 
-- `<DropdownMenu />` - A reusable component that renders the dropdown menu- allowing a user to edit or remove their own content. This can be seen on many pages, for example the post page (own post editing), profile page (editing own profile data) and comments editing.
+- `<DropdownMenu />` - A reusable component that renders the dropdown menu - allowing a user to edit or remove their own content. This can be seen on many pages, for example the post page (own post editing), profile page (editing own profile data) and comments editing.
 
 - `<NavBar />` - A reusable component that is rendered on every page. The content within the navbar changes depending on the authentication status of a user (if not logged in, display icons for login/signup). When a user is logged in, they are shown the avatar component and a dropdown menu allowing them to logout or access their profile.
 
@@ -279,7 +279,7 @@ The backend API for this Front-End application was built with the Django REST Fr
 - The account must be valid,
 - The password must match what was initially created with the username,
 - Error messages are be displayed if the details don't match,
-- The logged in user is then redirected to the homepage,sign-in-form-feature
+- The logged in user is then redirected to the homepage,sign-in-form-feature,
 
 <details><summary>Sign In Form Screenshot</summary>
 <img src="docs/readme/features/signin-feature.png">
@@ -354,7 +354,7 @@ The backend API for this Front-End application was built with the Django REST Fr
 
 ### Not Found Page
 
-- If a URL that doesn't exist is entered, this page is displayed to give visual feedback to the user that it is incorrect
+- If a URL that doesn't exist is entered, this page is displayed to give visual feedback to the user that it is incorrect,
 - The navbar is still displayed so the user can revert back to the home page.
 
 <details><summary>Not Found Feature Screenshot</summary>
@@ -368,19 +368,19 @@ The backend API for this Front-End application was built with the Django REST Fr
 Improvements I would like to add to my site in the future:
 
 - Authentication
-  - Allow account creation and signup using different social media platform accounts (Google, Facebook etc.)
-  - Allow login with users metamast (Eth wallets)
-  - Password reset feature for the user if they forget theirs
+  - Allow account creation and signup using different social media platform accounts (Google, Facebook etc.),
+  - Allow login with users metamast (Eth wallets),
+  - Password reset feature for the user if they forget theirs,
 - Posts
   - Connecting the avatar and post images to the specific IPFS storage location of the image,
 - Profile
-  - Profiles to be connected to soulbound tokens so that is your login in the future
+  - Profiles to be connected to soulbound tokens so that is your login in the future,
 - Comments
-  - Comment liking
+  - Comment liking,
 - Subscription & Contact
-    - I would like to have email feedback to the sender when these forms submit in the future.
+    - I would like to have email feedback to the sender when these forms submit in the future,
 - App rework for ios and mobile display bugs
-  - Ability to authenticate the user on mobile
+  - Ability to authenticate the user on mobile,
 
 ## Validation
 
@@ -727,7 +727,7 @@ There were no JSX errors and the project compiled sucessfully.
 
 | **Action**                                                                               | **Expected Result**                                 | **Actual Result** |
 | ---------------------------------------------------------------------------------------- | --------------------------------------------------- | ----------------- |
-| Click on the post you want to viwe comments for then scroll down to the comments section | The latest comment will be displayed under the post | Works as expected |
+| Click on the post you want to view comments for then scroll down to the comments section | The latest comment will be displayed under the post | Works as expected |
 
 <details><summary>User Story Test Screenshots</summary>
 <img src="docs/readme/manual-testing/user-story-mt-17-1.png">
@@ -958,8 +958,7 @@ For desktop and mobile responsiveness.
 ### Browers that I've tested on
 
 Testing has been carried out on the following browsers:
-
-
+There was browser compatability issues that are discussed in the bugs section.
 Therefor this project should be tested on Chrome or firefox on desktop. 
 
 - Googe Chrome
@@ -970,7 +969,7 @@ Therefor this project should be tested on Chrome or firefox on desktop.
 
 - Browser Compatability
 
-    - I have an issue when i an trying to sign in on IOS, Mobile Browsers and Safari, When logging in i would get redirected back to the log in page.
+    - I have an issue when I am trying to sign in on IOS, Mobile Browsers and Safari, When logging in i would get redirected back to the log in page.
         I found out that Google Chrome and Firefox on desktop were the only 2 browsers having this issue. The issue seems to be with the access token getting stored which is used to redirect the logged in user to the loged in page. Since the token was not getting stored correctly in local storage the redirect kept pushing me back to the sign in screen. 
         This is a bug that I want to fix when i have more time. The bug is known by many and seems to be a react compatability issue with browsers. 
 
@@ -979,6 +978,17 @@ Therefor this project should be tested on Chrome or firefox on desktop.
     - I am after getting a bug with my subscription form where it is saying that my fullname in undefine. This bug was not evedent yesterday when i was testing out the project. 
         I have not been able to resolve this due to the tight time copnstraints of submission and at risk of causing more issues. 
         This is a bug i will fix after submission as i get more time to focus on it. The functionality of the rest of the project meets the project criteria therefore I made the decision to keep this bug unresolved.
+
+- PostEditForm
+
+    - BUG: The post edit form was not submitting one of the fields correctly.
+    - FIX: In the form it was noticed that "type = text" was being used so it was changed to "as = text" This fixed the bug.
+
+- Subscription Brg
+
+    - BUG: The subscription form aws getting an undefined name error when the form was being submitted.
+    - FIX: Name was inputted in as the value in the form when it should be fullname to match the api.
+
 
 [Back to Table Of Contents](#table-of-contents)
 
